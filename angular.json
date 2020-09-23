@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "HarvestCity"
+    }
+  },
+  "defaultProject": "HarvestCity",
+  "cli": {
+    "analytics": false
+  }
 }
