@@ -1,0 +1,129 @@
+<div class="row">
+    <div class="col">
+        <div class="bg">
+            <h1 class="text-center display-2" style="color: rgb(240, 235, 235); margin-top: 165px;">Join The Family</h1>
+        </div>
+    </div>
+</div>
+<div class="row" style="margin-top: 20px;">
+    <div class="col-md-2">
+        <!-- Filler -->
+    </div>
+    <div class="col-md-8 text-left">
+        <p class="h5 font-weight-light">
+            We are so glad you reached out! We care about you and want to help.
+        </p>
+        <p class="h5 font-weight-light">
+            For many, the spread of the coronavirus (COVID-19) has caused fear and anxiety. Yet we are grateful that the
+            Bible tells us, “God has not given us a spirit of fear, but of power and of love and of a sound mind” (2
+            Timothy 1:7). HarvestCity Church desires to walk beside you during this time to love you, support you, and care
+            for you.
+        </p>
+        <p class="h5 font-weight-light">
+            If you are seeking help during this time, please fill out the form below. Once this is submitted, someone
+            from the team will connect with you.
+        </p>
+    </div>
+    <div class="col-md-2">
+        <!-- Filler -->
+    </div>
+</div>
+<div class="row" style="margin-top: 20px;">
+    <div class="col-md-2">
+        <!-- Filler -->
+    </div>
+    <div class="col-md-8">
+        <form #register="ngForm">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>First Name</label>
+                        <input type="text" name="firstName" id="firstName" class="form-control" #firstNameForm="ngModel" [(ngModel)]="firstName" required [ngClass]="{'is-invalid': firstNameForm.touched && firstNameForm.invalid}">
+                            <span class="invalid-feedback"> First Name cannot be empty</span>         
+                    </div>
+                </div>   
+                <div class="col">
+                    <div class="form-group">
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" id="lastName" class="form-control" #lastNameForm="ngModel" [(ngModel)]="lastName" required [ngClass]="{'is-invalid': lastNameForm.touched && lastNameForm.invalid}">
+                            <span class="invalid-feedback"> Last Name cannot be empty</span>
+                    </div>
+                </div>         
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="text" name="email" id="email" class="form-control" #emailForm="ngModel" [(ngModel)]="email" required email [ngClass]="{'is-invalid': emailForm.touched && emailForm.invalid}">
+                            <span class="invalid-feedback"> Email cannot be empty</span>        
+                    </div>
+                </div>   
+                <div class="col">
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" #phoneNumberForm="ngModel" [(ngModel)]="phoneNumber" required [ngClass]="{'is-invalid': phoneNumberForm.touched && phoneNumberForm.invalid}">
+                            <span class="invalid-feedback"> Phone Number cannot be empty</span>
+                    </div>
+                </div>         
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label>Street</label>
+                        <input type="text" name="street" id="street" class="form-control" #streetForm="ngModel" [(ngModel)]="street" required [ngClass]="{'is-invalid': streetForm.touched && streetForm.invalid}">
+                            <span class="invalid-feedback"> Street cannot be empty</span>
+                    </div>
+                </div>        
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" name="city" id="city" class="form-control" #cityForm="ngModel" [(ngModel)]="city" required [ngClass]="{'is-invalid': cityForm.touched && cityForm.invalid}">
+                            <span class="invalid-feedback"> City cannot be empty</span>
+                    </div>
+                </div>     
+                <div class="col-2">
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" name="state" id="state" class="form-control" #stateForm="ngModel" [(ngModel)]="state" required [ngClass]="{'is-invalid': stateForm.touched && stateForm.invalid}">
+                            <span class="invalid-feedback"> State cannot be empty</span>
+                    </div>
+                </div>   
+                <div class="col-4">
+                    <div class="form-group">
+                        <label>Zip</label>
+                        <input type="text" name="zip" id="zip" class="form-control" #zipForm="ngModel" [(ngModel)]="zip" required [ngClass]="{'is-invalid': zipForm.touched && zipForm.invalid}">
+                            <span class="invalid-feedback"> Zip cannot be empty</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="h5 font-weight-light">
+                        Have you become a member of Harvest City Church by taking "Catch the Vision?"
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="margin: 5px;">
+                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="margin: 5px;">
+                        <label class="form-check-label" for="inlineRadio1">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <hr>
+                     <input type="submit" [disabled]="register.invalid" (click)="register()" class="btn btn-info rounded">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2">
+        <!-- Filler -->
+    </div>
+</div>

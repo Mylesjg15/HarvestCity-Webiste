@@ -1,19 +1,7 @@
-.bg {
-    height: 500px;
-    width: 100%;
-    alt: Responsive image;
-    background-size: cover;
-    display: table;
-    background-attachment: fixed;
-    background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/90896056_3126875830656872_462730297478217728_o.jpg?_nc_cat=111&_nc_sid=730e14&_nc_ohc=-e-29OGMX68AX8K9cmY&_nc_ht=scontent-dfw5-1.xx&oh=4486161767a3b415b86bc0e3343d56a6&oe=5F93EDAD);
-  }
-  .row {
-      margin: 15px;
-  }
-  .textOverImage{
+.textOverImage{
     position:relative;
     width:auto;
-    height:79%;
+    height:100%;
     float:left;
     margin:4px;
     background-size:100%;
@@ -27,7 +15,7 @@
   
   .textOverImage:after{
     position:absolute;
-    top:75%;
+    top:100%;
     bottom:0;
     left:0;
     right:0;
@@ -52,5 +40,3 @@
     font-weight:bold;
     font-size:1.5em;
   }
-
-  

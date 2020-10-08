@@ -1,0 +1,9 @@
+.bg {
+    height: 500px;
+    width: 100%;
+    alt: Responsive image;
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+    background-image: url(https://scontent-dfw5-2.xx.fbcdn.net/v/t31.0-8/12068775_1062355620442247_6762201039352643742_o.jpg?_nc_cat=104&_nc_sid=cdbe9c&_nc_ohc=IvbRtqoWBdkAX8lvbHp&_nc_ht=scontent-dfw5-2.xx&oh=65daec8e154183937e008293eec28df3&oe=5F941DBF);
+  }

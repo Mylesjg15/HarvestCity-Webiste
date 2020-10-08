@@ -1,0 +1,10 @@
+.container-fluid {
+  height: 400px;
+  width: 100%;
+  alt: Responsive image;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+  position: 0 2;
+  background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-9/82200700_3339020966109023_6363928359986660037_o.jpg?_nc_cat=110&_nc_sid=cdbe9c&_nc_ohc=heAce6kux2QAX_fofpL&_nc_ht=scontent-dfw5-1.xx&oh=7fc207bcd085f25917045ec0c7c81aaa&oe=5F9096ED);
+}
